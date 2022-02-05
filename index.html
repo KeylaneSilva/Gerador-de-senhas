@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de senha </title>
+</head>
+<body>
+    <img 
+        src="img/logo.png"
+        alt="gerador de senha"
+        class="logo"
+    >
+
+    <main class="container-input">
+        <span>Numeros: <span class="especial" id="valor1"></span></span>
+        <input 
+            type="range"
+            id="slider1"
+            class="slider"
+            min="0"
+            max="10"
+            value="5"
+        />
+        <span>Letras maiusculas: <span class="especial" id="valor2"></span></span>
+        <input 
+            type="range"
+            id="slider2"
+            class="slider"
+            min="0"
+            max="10"
+            value="5"
+        />
+        <span>Letras minusculas: <span class="especial" id="valor3"></span></span>
+        <input 
+            type="range"
+            id="slider3"
+            class="slider"
+            min="0"
+            max="10"
+            value="5"
+        />
+        <span>Caracteres especiais: <span class="especial" id="valor4"></span></span>
+        <input 
+            type="range"
+            id="slider4"
+            class="slider"
+            min="0"
+            max="10"
+            value="5"
+        />
+        <button id="button" class="button-cta" onclick="gerarSenha()">Gerar senha</button>
+    </main>
+
+    <div id="container-senha" class="container-senha hide">
+        <span class="titulo">Sua senha gerada foi:</span>
+        <span onclick="copySenha()"  id="senha" class="senha">534534534534534</span>
+        <span class="tooltip">Clique na senha para copiar 👆</span>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+
+</html>
