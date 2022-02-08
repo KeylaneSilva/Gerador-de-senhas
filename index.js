@@ -1,21 +1,23 @@
+// capturando input
 let sliderElement1 = document.querySelector("#slider1")
 let sliderElement2 = document.querySelector("#slider2")
 let sliderElement3 = document.querySelector("#slider3")
 let sliderElement4 = document.querySelector("#slider4")
 
+// botão
 let buttonElement = document.querySelector("#button")
 
+// valores escolhidos
 let tamanhoSenha1 = document.querySelector("#valor1")
 let tamanhoSenha2 = document.querySelector("#valor2")
 let tamanhoSenha3 = document.querySelector("#valor3")
 let tamanhoSenha4 = document.querySelector("#valor4")
 
 let senha = document.querySelector("#senha")
-
 let containerSenha = document.querySelector("#container-senha")
-
 let novaSenha = ''
 
+// capturar o valor do input no range
 tamanhoSenha1.innerHTML = sliderElement1.value;
 sliderElement1.oninput = function(){
     tamanhoSenha1.innerHTML = this.value
